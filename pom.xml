@@ -57,6 +57,18 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-java6 -->
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client-java6</artifactId>
+            <version>1.31.5</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-oauth2 -->
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-oauth2</artifactId>
+            <version>v2-rev157-1.25.0</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-sheets -->
         <dependency>
             <groupId>com.google.apis</groupId>
@@ -64,47 +76,69 @@
             <version>v4-rev612-1.25.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.google.api.client/google-api-client-auth-oauth2 -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.security.oauth/spring-security-oauth2 -->
         <dependency>
-            <groupId>com.google.api.client</groupId>
-            <artifactId>google-api-client-auth-oauth2</artifactId>
-            <version>1.2.3-alpha</version>
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+            <version>2.5.0.RELEASE</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-servlet -->
+        <!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-sheets -->
         <dependency>
-            <groupId>com.google.oauth-client</groupId>
-            <artifactId>google-oauth-client-servlet</artifactId>
-            <version>1.31.5</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-appengine -->
-        <dependency>
-            <groupId>com.google.oauth-client</groupId>
-            <artifactId>google-oauth-client-appengine</artifactId>
-            <version>1.31.5</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client -->
-        <dependency>
-            <groupId>com.google.oauth-client</groupId>
-            <artifactId>google-oauth-client</artifactId>
-            <version>1.31.5</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-java6 -->
-        <dependency>
-            <groupId>com.google.oauth-client</groupId>
-            <artifactId>google-oauth-client-java6</artifactId>
-            <version>1.31.5</version>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-sheets</artifactId>
+            <version>v4-rev612-1.25.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-jetty -->
         <dependency>
             <groupId>com.google.oauth-client</groupId>
             <artifactId>google-oauth-client-jetty</artifactId>
-            <version>1.22.0</version>
+            <version>1.31.5</version>
         </dependency>
+
+        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.google.apis/google-api-services-sheets &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.google.apis</groupId>-->
+<!--            <artifactId>google-api-services-sheets</artifactId>-->
+<!--            <version>v4-rev612-1.25.0</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.google.api.client/google-api-client-auth-oauth2 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.google.api.client</groupId>-->
+<!--            <artifactId>google-api-client-auth-oauth2</artifactId>-->
+<!--            <version>1.2.3-alpha</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-servlet &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.google.oauth-client</groupId>-->
+<!--            <artifactId>google-oauth-client-servlet</artifactId>-->
+<!--            <version>1.31.5</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-appengine &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.google.oauth-client</groupId>-->
+<!--            <artifactId>google-oauth-client-appengine</artifactId>-->
+<!--            <version>1.31.5</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.google.oauth-client</groupId>-->
+<!--            <artifactId>google-oauth-client</artifactId>-->
+<!--            <version>1.31.5</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-java6 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.google.oauth-client</groupId>-->
+<!--            <artifactId>google-oauth-client-java6</artifactId>-->
+<!--            <version>1.31.5</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-jetty &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.google.oauth-client</groupId>-->
+<!--            <artifactId>google-oauth-client-jetty</artifactId>-->
+<!--            <version>1.22.0</version>-->
+<!--        </dependency>-->
 
     </dependencies>
 
