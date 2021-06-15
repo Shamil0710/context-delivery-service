@@ -105,10 +105,10 @@
             <scope>import</scope>
         </dependency>
 
-        <dependency>
-            <groupId>com.google.api-client</groupId>
-            <artifactId>google-api-client</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.google.api-client</groupId>-->
+<!--            <artifactId>google-api-client</artifactId>-->
+<!--        </dependency>-->
 
         <!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.google.apis/google-api-services-sheets &ndash;&gt;-->
 <!--        <dependency>-->

@@ -30,7 +30,7 @@ public class SheetServices {
                 .execute();
         List<List<Object>> values = valueRange.getValues();
         for (List row : values) {
-            System.out.println(row.get(1));
+            System.out.println(row.get(0));
         }
     }
 }

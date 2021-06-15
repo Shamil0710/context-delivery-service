@@ -23,14 +23,16 @@ public class GoogleAuthorizeUtil {
     public static Credential authorize() throws IOException, GeneralSecurityException {
         InputStream in = GoogleAuthorizeUtil.class.getResourceAsStream("/client_secrets.json");
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JacksonFactory.getDefaultInstance(), new InputStreamReader(in));
-
         List<String> scopes = Arrays.asList(SheetsScopes.SPREADSHEETS);
-
+        final LocalServerReceiver receiver = new LocalServerReceiver.Builder()
+                .setPort(8888)
+                .setCallbackPath("/callback")
+                .setHost("localhost")
+                .build();
         GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(GoogleNetHttpTransport.newTrustedTransport(), JacksonFactory.getDefaultInstance(), clientSecrets, scopes).setDataStoreFactory(new MemoryDataStoreFactory())
                 .setAccessType("offline")
                 .build();
-//                .setAccessType("online").build();
-        Credential credential = new AuthorizationCodeInstalledApp(flow, new LocalServerReceiver()).authorize("user");
+        Credential credential = new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
 
         return credential;
     }
