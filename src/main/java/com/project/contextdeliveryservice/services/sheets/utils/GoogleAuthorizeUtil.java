@@ -8,6 +8,7 @@ import com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
 import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.client.util.store.MemoryDataStoreFactory;
+import com.google.api.services.docs.v1.DocsScopes;
 import com.google.api.services.sheets.v4.SheetsScopes;
 import org.springframework.stereotype.Component;
 
@@ -23,7 +24,7 @@ public class GoogleAuthorizeUtil {
     public static Credential authorize() throws IOException, GeneralSecurityException {
         InputStream in = GoogleAuthorizeUtil.class.getResourceAsStream("/client_secrets.json");
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JacksonFactory.getDefaultInstance(), new InputStreamReader(in));
-        List<String> scopes = Arrays.asList(SheetsScopes.SPREADSHEETS);
+        List<String> scopes = Arrays.asList(SheetsScopes.SPREADSHEETS, DocsScopes.DOCUMENTS, DocsScopes.DRIVE);
         final LocalServerReceiver receiver = new LocalServerReceiver.Builder()
                 .setPort(8888)
                 .setCallbackPath("/callback")

@@ -2,7 +2,7 @@ package com.project.contextdeliveryservice.services.sheets;
 
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.model.ValueRange;
-import com.project.contextdeliveryservice.services.sheets.utils.SheetsServiceUtil;
+import com.project.contextdeliveryservice.services.sheets.utils.ServiceUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,13 +12,12 @@ import java.util.List;
 
 @Service
 public class SheetServices {
-
     private static final String SPREADSHEET_ID = "15VzLgPx48NniPbtvDZxDeDA8OlOYZtjMU_Qw73M6EXU";
-    private SheetsServiceUtil serviceUtil;
+    private ServiceUtil serviceUtil;
     private String range = "testList!A1:A10";
 
     @Autowired
-    public SheetServices(SheetsServiceUtil serviceUtil) {
+    public SheetServices(ServiceUtil serviceUtil) {
         this.serviceUtil = serviceUtil;
     }
 
