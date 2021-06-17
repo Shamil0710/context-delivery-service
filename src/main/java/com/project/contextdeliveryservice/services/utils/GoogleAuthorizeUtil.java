@@ -1,4 +1,4 @@
-package com.project.contextdeliveryservice.services.sheets.utils;
+package com.project.contextdeliveryservice.services.utils;
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
@@ -19,6 +19,9 @@ import java.security.GeneralSecurityException;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Класс ответсвенный за аунтификацию в гугл сервисах
+ */
 @Component
 public class GoogleAuthorizeUtil {
     public static Credential authorize() throws IOException, GeneralSecurityException {
